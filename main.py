@@ -7,13 +7,13 @@ import ctypes
 FILEPATH = Path().absolute()
 
 """
-Waits 5 seconds, plays the song, and then closes
+Waits 3 seconds, plays the song, and then closes
 If the system running the script is windows, minimize the terminal running it 
 4 seconds after the song has started playing
 """
 if __name__ == "__main__":
     print("Starting...")
-    time.sleep(5)
+    time.sleep(3)
     playing = AudioPlayer(FILEPATH.__str__() + "\\media\\gravekeeper.mp3")
     playing.play()
     # print("\"ehh... *jams to music*\"")
