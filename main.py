@@ -5,8 +5,9 @@ from audioplayer import AudioPlayer
 import ctypes
 FILEPATH = Path().absolute()
 
-# starts playing music, then minimizes window in 4 seconds, exits when song ends
+# waits then plays music, minimizes window in 4 seconds, exits when song ends
 if __name__ == "__main__":
+    time.sleep(5)
     playing = AudioPlayer(FILEPATH.__str__() + "\\music\\gravekeeper.mp3")
     playing.play()
     # print("\"ehh... *jams to music*\"")
