@@ -3,9 +3,14 @@ import sys
 import time
 from audioplayer import AudioPlayer
 import ctypes
+
 FILEPATH = Path().absolute()
 
-# waits then plays music, minimizes window in 4 seconds, exits when song ends
+"""
+Waits 5 seconds, plays the song, and then closes
+If the system running the script is windows, minimize the terminal running it 
+4 seconds after the song has started playing
+"""
 if __name__ == "__main__":
     time.sleep(5)
     playing = AudioPlayer(FILEPATH.__str__() + "\\media\\gravekeeper.mp3")
