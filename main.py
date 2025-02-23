@@ -13,7 +13,8 @@ if __name__ == "__main__":
     # print("\"ehh... *jams to music*\"")
     print("Now playing...")
     time.sleep(4)
-    if "win" in sys.platform:
+    # minimize window if windows
+    if sys.platform == "win32":
         (ctypes.windll.user32
             .ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 6))
     time.sleep(292)
