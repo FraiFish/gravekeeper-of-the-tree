@@ -12,11 +12,11 @@ If the system running the script is windows, minimize the terminal running it
 4 seconds after the song has started playing
 """
 if __name__ == "__main__":
+    print("Starting...")
     time.sleep(5)
     playing = AudioPlayer(FILEPATH.__str__() + "\\media\\gravekeeper.mp3")
     playing.play()
     # print("\"ehh... *jams to music*\"")
-    print("Now playing...")
     time.sleep(4)
     # minimize window if windows
     if sys.platform == "win32":
